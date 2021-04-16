@@ -1,0 +1,268 @@
+.container {
+    font-family: 'Rajdhani';
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.photoUser {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoUser > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    text-indent: 25px;
+    text-align: justify;
+    color: var(--light-grey);
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.option {
+    width: auto;
+    height: auto;
+}
+
+.sidebarDown {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+}
+
+.containerProjects {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.containerProjects>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5px 0px 5px;
+    color: var(--light-grey);
+    font-size: 26px;
+}
+
+.projectsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introductionProjects {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.aboutProjects {
+    width: 100%;
+}
+
+.aboutProjects button {
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #4b4b4b;
+    background-color: #4b4b4b;
+    color: var(--light-grey);
+}
+
+.aboutProjects button:hover {
+    cursor: pointer;
+    border: 1px solid #a3a3a3;
+}
+
+.aboutProjects > p {
+    color: var(--light-grey);
+    padding: 5px;
+}
+
+.aboutProjects > img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767.98px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .introduction {
+        display: block;
+    }
+
+    .photoUser {
+        padding-top: 30px;
+    }
+
+    .photoUser > img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .profile {
+        height: auto;
+        
+    }
+
+    .profile h1 {
+        width: 90%;
+        margin-left: 20px;
+        padding-top: 25px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .pages {
+        float: none;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+    }
+
+    .option {
+        padding: 10px 10px;
+    }
+
+    .containerProjects {
+        height: auto;
+    }
+
+    .containerProjects > p {
+        padding-top: 10px;
+    }
+
+    .projectsContainer {
+        height: 90%;
+    }
+
+    .introductionProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+    }
+
+    .aboutProjects {
+        width: 200px;
+        height: 200px;
+        padding-top: 5px;
+    }
+
+    .aboutProjects > p {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photoUser > img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .profile {
+        height: 220px;
+    }
+
+    .profile h1 {
+        padding: 25px 10px;
+        font-size: 20px;
+    }
+
+    .pages {
+        padding-top: 0;
+    }
+
+    .option {
+        padding-right: 7px;
+    }
+
+    .containerProjects {
+        width: auto;
+        height: 100vh;
+    }
+
+    .projectsContainer {
+        height: 75vh;
+    }
+
+    .aboutProjects > p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: auto;
+        height: 100vh;
+    }
+
+    .photoUser > img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profile {
+        width: auto;
+    }
+
+    .profile h1 {
+        width: 500px;
+        padding: 5px 10px;
+        font-size: 24px;
+    }
+
+    .pages {
+        padding-top: 10px;
+    }
+
+    .option {
+        padding-right: 10px;
+    }
+
+    .containerProjects {
+        width: auto;
+        height: 100vh;
+    }
+
+    .projectsContainer {
+        height: 75vh;
+    }
+
+    .aboutProjects > p {
+        width: 90%;
+        font-size: 22px;
+        padding: 10px 5px;
+    }
+}

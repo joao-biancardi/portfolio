@@ -31,14 +31,11 @@ const Home: React.FC = () => {
                 </div>
                 <div className={styles.profile}>
                     <h1>
-                        {/* Meu nome é João Biancardi, tenho 19 anos e estudo tecnologia
-                    hà 2 anos sou formado como tecnico de informática para a
-                    internet no ETECVAV de Jundiai. Estou focado no front-end */}
-                    O Lorem Ipsum é um texto modelo da indústria tipográfica
-                    e de impressão. O Lorem Ipsum tem vindo a ser o texto
-                    padrão usado por estas indústrias desde o ano de 1500,
-                    quando uma misturou os caracteres de um texto para criar
-                    um espécime de livro.
+                        Sou João Biancardi, tenho 19 anos. Sempre gostei de 
+                        tecnologia, me formei tecnico de informática para a 
+                        internet no ETECVAV de Jundiai. Atualmente estou focado em 
+                        front-end, mas busco sempre aprender cada dia mais, e 
+                        aberto para aprender novas tecnologias.
                     </h1>
                     <div className={styles.pages}>
                         <div className={styles.option}>
@@ -87,7 +84,7 @@ const Home: React.FC = () => {
                     <div className={styles.introductionProjects}>
                         <div className={styles.aboutProjects}>
                             <img src={controleDeDespesas} alt="" />
-                            <a href="https://nlw-4-teal.vercel.app/">
+                            <a href="https://controle-de-despesas-beta.vercel.app/">
                                 <button>Ver mais</button>
                             </a>
                             <p>
@@ -97,7 +94,7 @@ const Home: React.FC = () => {
                         </div>
                         <div className={styles.aboutProjects}>
                             <img src={caçaNiquel} alt="Controle de despesas" />
-                            <a href="https://nlw-4-teal.vercel.app/">
+                            <a href="https://cacaniquel-n2wnesmhc-joao-biancardi.vercel.app/">
                                 <button>Ver mais</button>
                             </a>
                             <p>
@@ -107,6 +104,7 @@ const Home: React.FC = () => {
                         </div>
                         <div className={styles.aboutProjects}>
                             <img src={pomodoro} alt="Caça Niquel" />
+                           
                             <a href="https://nlw-4-teal.vercel.app/">
                                 <button>Ver mais</button>
                             </a>

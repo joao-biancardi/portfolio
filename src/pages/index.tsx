@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Head from 'next/head';
 
 import { FaGithub } from 'react-icons/fa';
@@ -31,50 +32,58 @@ const Home: React.FC = () => {
                 </div>
                 <div className={styles.profile}>
                     <h1>
-                        Sou João Biancardi, tenho 19 anos. Sempre gostei de 
-                        tecnologia, me formei tecnico de informática para a 
-                        internet no ETECVAV de Jundiai. Atualmente estou focado em 
-                        front-end, mas busco sempre aprender cada dia mais, e 
+                        Sou João Biancardi, tenho 19 anos. Sempre gostei de
+                        tecnologia, me formei técnico de informática para a
+                        internet no ETECVAV de Jundiai. Atualmente estou focado em
+                        front-end, mas busco sempre aprender cada dia mais, e
                         aberto para aprender novas tecnologias.
                     </h1>
                     <div className={styles.pages}>
                         <div className={styles.option}>
-                            <a href="https://github.com/joao-biancardi?tab=repositories">
-                                <FaGithub
-                                    size={40}
-                                    title="GitHub"
-                                    color="var(--light-grey)"
-                                />
-                            </a>
+                            <Link href="https://github.com/joao-biancardi?tab=repositories">
+                                <a>
+                                    <FaGithub
+                                        size={40}
+                                        title="GitHub"
+                                        color="var(--light-grey)"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className={styles.option}>
-                            <a href="https://www.instagram.com/biancardi_/">
-                                <FaInstagram
-                                    size={40}
-                                    title="Instagram"
-                                    color="var(--light-grey)"
-                                />
-                            </a>
+                            <Link href="https://www.instagram.com/biancardi_/">
+                                <a>
+                                    <FaInstagram
+                                        size={40}
+                                        title="Instagram"
+                                        color="var(--light-grey)"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                         <div className={styles.option}>
-                            <a href="https://www.linkedin.com/in/jo%C3%A3o-biancardi-447599190/">
-                                <FaLinkedin
-                                    size={40}
-                                    title="Linkedin"
-                                    color="var(--light-grey)"
-                                />
-                            </a>
+                            <Link href="https://www.linkedin.com/in/jo%C3%A3o-biancardi-447599190/">
+                                <a>
+                                    <FaLinkedin
+                                        size={40}
+                                        title="Linkedin"
+                                        color="var(--light-grey)"
+                                    />
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <div className={styles.sidebarDown}>
-                    <a href="#containerProjects">
-                        <FaArrowAltCircleDown
-                            size={50}
-                            title="Projetos"
-                            color="var(--light-grey)"
-                        />
-                    </a>
+                    <Link href="#containerProjects">
+                        <a>
+                            <FaArrowAltCircleDown
+                                size={50}
+                                title="Projetos"
+                                color="var(--light-grey)"
+                            />
+                        </a>
+                    </Link>
                 </div>
             </div>
 
@@ -84,9 +93,11 @@ const Home: React.FC = () => {
                     <div className={styles.introductionProjects}>
                         <div className={styles.aboutProjects}>
                             <img src={controleDeDespesas} alt="" />
-                            <a href="https://controle-de-despesas-beta.vercel.app/">
-                                <button>Ver mais</button>
-                            </a>
+                            <Link href="https://controle-de-despesas-beta.vercel.app/">
+                                <a>
+                                    <button>Ver mais</button>
+                                </a>
+                            </Link>
                             <p>
                                 Projeto para ter controle dos gastos mensais
                                 utilizando JavaScript.
@@ -94,9 +105,11 @@ const Home: React.FC = () => {
                         </div>
                         <div className={styles.aboutProjects}>
                             <img src={caçaNiquel} alt="Controle de despesas" />
-                            <a href="https://cacaniquel-n2wnesmhc-joao-biancardi.vercel.app/">
-                                <button>Ver mais</button>
-                            </a>
+                            <Link href="https://cacaniquel-joao-biancardi.vercel.app">
+                                <a>
+                                    <button>Ver mais</button>
+                                </a>
+                            </Link>
                             <p>
                                 Jogo caça-niquel elaborado no curso da ETECVAV
                                 com Javascript.
@@ -104,10 +117,12 @@ const Home: React.FC = () => {
                         </div>
                         <div className={styles.aboutProjects}>
                             <img src={pomodoro} alt="Caça Niquel" />
-                           
-                            <a href="https://nlw-4-teal.vercel.app/">
-                                <button>Ver mais</button>
-                            </a>
+
+                            <Link href="https://nlw-4-joao-biancardi.vercel.app/">
+                                <a>
+                                    <button>Ver mais</button>
+                                </a>
+                            </Link>
                             <p>
                                 Projeto realizado na semana 4 da NLW em React
                                 com Next.Js.
